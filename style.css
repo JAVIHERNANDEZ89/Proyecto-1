@@ -52,10 +52,20 @@ img:nth-child(2){
     gap: 150px;
 }
 
-.navbar-list{
-    gap: 30px;
+.navbar-list a{
+    color: white;
 }
 
-.rojo{
+
+.navbar-list{
+    gap: 30px;
+    
+}
+
+.rojo a{
     color: red;
+}
+
+.home{
+    font-weight: bold;
 }
