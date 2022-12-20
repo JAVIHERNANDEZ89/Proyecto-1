@@ -15,7 +15,7 @@ header{
     
     width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: #18002E;
     display: flex;
     
     justify-content: space-between;
@@ -30,6 +30,8 @@ header{
 }
 
 img:nth-child(1){
+    position: relative;
+    top:20px;
     width: 250px;
     height: 250px;
 }
@@ -43,7 +45,8 @@ img:nth-child(2){
 }
 
 .navbar img{
-    position: relative;    
+    position: relative;  
+    top: 5px;  
     right: 10px;
     width: 40px;
     height: 40px;
@@ -80,4 +83,5 @@ img:nth-child(2){
 
 .navbar  a:hover{
     font-weight:bold;
+   
 }
