@@ -14,15 +14,15 @@
 /* header - contenedor principal del navbar */
 header{
     width: 100%;
-    height: 100px;
-    background-color: #18002E;
+    height: 65px;
+    background-color: black;
     display: flex;
     
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
     list-style: none;
-    position: fixed;
+    
     top: 0;
     
     z-index: 2;/* para que se vea siempre por encima */
@@ -34,47 +34,24 @@ header{
 /* logo */
 img:nth-child(1){
     position: relative;
-    top:14px;
+    top:6px;
     
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
 }
 
 /* titulo */
 img:nth-child(2){
     position: relative;
     top:13px;
-    left: 130px;
-    width: 400px;
-    height: 400px;
+    left: 10px;
+    width: 350px;
+    height: 350px;
 }
 
-/* instagram */
-img:nth-child(3){
-    position: relative;
-    
-    
-    left: 730px;
-    width: 50px;
-    height: 30px;
-}
 
-/* facebook */
-img:nth-child(4){
-    position: relative;
-    left: 500px;
-    width: 30px;
-    height: 30px;
-}
 
-/* carrito */
-.navbar img{
-    position: relative;  
-    top: 5px;  
-    right: 10px;
-    width: 40px;
-    height: 40px;
-}
+
 
 
 /* contenido del navbar y navbar-list */
@@ -87,7 +64,7 @@ img:nth-child(4){
 
 .navbar{
     position: relative;
-    right: 200px;
+    right: 100px;
     gap: 150px;
 }
 
@@ -98,7 +75,7 @@ img:nth-child(4){
 
 
 .navbar-list{
-    gap: 30px;
+    gap: 25px;
     
 }
 
@@ -106,22 +83,17 @@ img:nth-child(4){
     color: red;
 }
 
-
+.carrito{
+    
+    font-size: 25px;
+}
 
 .navbar  a:hover{
-    font-weight:bold;
+    color:#FFB038;
+    transition: 0.8s;
    
 }
 
-.instagram:hover{
-    width: 60px ;
-    height: 40px;
-}
-
-.facebook:hover{
-    width: 40px ;
-    height: 40px;
-}
 
 
 
@@ -222,3 +194,260 @@ border-radius: 10px;
     margin: 20px;
     
 }
+
+/* CARDS */
+
+/* cards1 */
+.cards{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    
+    
+    
+}
+
+.cards h2{
+    color: #FFB038;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.cards p{
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+}
+
+/* cards-imagenes */
+
+.cards_imagenes{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    
+   
+}
+
+.cards1 img{
+    border-radius: 20px;
+    width:596px ;
+    height:359px ;
+}
+
+
+
+.cuadro{
+    border-radius: 20px;
+    width: 289px;
+    height: 312px;
+    background-color: aliceblue;
+    z-index: 4;
+    position: relative;
+    bottom: 330px;
+    left: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.cuadro a:hover{
+    background-color: white;
+    color: #FFB038;
+    transition: 0.8s;
+}
+
+.cuadro h3{
+color: #FFB038;
+}
+
+.cuadro p{
+    padding: 10px;
+}
+
+.cuadro a{
+    padding: 20px 30px;
+    background-color:#DAE1D2 ;
+    position: relative;
+    top: 20px;
+    border-radius: 20px;
+}
+
+.cards2 img{
+    border-radius: 20px;
+    width:596px ;
+    height:359px ;
+}
+
+/* DIVICION */
+
+.divicion{
+    background-color: #FFB038;
+    width: 100%;
+    height: 20px;
+}
+
+/* CONTACTO */
+.contacto_footer{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+}
+
+.barra{
+    width: 100%;
+    height: 20px;
+    background-color: #FFB038;
+}
+
+/* izquierda */
+.izquierda{
+    width: 40%;
+    height: 600px;
+    text-align: center;
+    
+    
+}
+
+.izquierda h2{
+    color: #FFB038;
+    padding: 20px;
+}
+.izquierda p{
+    color: white;
+    padding: 20px;
+}
+.izquierda p:nth-child(4){
+    color:white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.izquierda img{
+    position: relative;
+    right: 100px;
+    bottom: 43px;
+    width: 30px;
+    height: 30px;
+}
+.redes img{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    margin: 20px;
+}
+
+/* CENTRO */
+
+.centro{
+width: 20%;
+height: 600px;
+background-color: #FFB038;
+text-align: center;
+}
+
+.centro h2{
+    color: white;
+    padding: 15px;
+}
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+.centro img{
+    position: relative;
+    top: 220px;
+    left: 20px;
+    z-index: 2;
+}
+
+
+
+/* derecha */
+.derecha{
+    text-align: center;
+width: 40%;
+height: 600px;
+}
+.derecha h2{
+    padding: 20px;
+color: #FFB038;
+}
+
+.derecha iframe{
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+
+
+/* PIE */
+
+.pie{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+.pie p{
+    position: relative;
+    width: 300px;
+    left: 150px;
+    top:40px;
+}
+
+
