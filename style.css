@@ -11,6 +11,7 @@
     list-style: none;
 }
 
+
 /* header - contenedor principal del navbar */
 header{
     width: 100%;
@@ -197,45 +198,58 @@ border-radius: 10px;
 }
 
 
+
 /* CARDS */
-footer{
-    background-color: rgb(255, 255, 255);
+.card_general{
+ 
+    background-color: rgb(0, 0, 0);
     color: #FFB038;
     text-align: center;
-    height: 100vh;
+    height: 1000px;
+    justify-content: center;
     
+}
+
+.card_general h2{
+    font-size: 30px;
+    position: relative;
+    top: 50px;
 }
 
 .cards_contenedor{
     display: flex;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
     width: 100%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
+    height: 600px;
+    background-color: rgb(77, 77, 77);
     position: absolute;
     padding: 100px;
     bottom: -1150px;
+    z-index: 1;
+    position: absolute;
+    top: 1200px;
 }
 
 
 
 .cards{
-    width:340px ;
-    height: 560px;
+    width:300px ;
+    height: 400px;
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
     
 }
 .cards img{
     position: relative;
-    height: 350px;
-    top: -120px;
+    height: 250px;
+    top: -70px;
     left: 0px;
 }
 
 .cards h3{
-    padding: 10px;
+    padding: 30px;
     font-size: 20px;
     color: #FFB038;
 }
@@ -246,17 +260,17 @@ footer{
 
 .cards a{
 background-color: #5271FF;
-padding:20px 30px ;
+padding:15px 30px ;
 border-radius: 20px;
 position: relative;
-top: 100px;
+top: 40px;
 color: wheat;
 }
 
 
 .cards_interior{
-    width:340px;
-    height:230px;
+    width:300px;
+    height:180px;
     background-color: violet;
     border-radius: 20px;
     background: linear-gradient(to bottom, rgb(255, 0, 212), rgb(113, 7, 235));
@@ -272,21 +286,24 @@ color: wheat;
 
 .contacto_contenedor{
     width: 100%;
-    height: 100vh;
+    height:400px;
     display: flex;
     position:absolute;
     padding: 150px 50px;
+    background-color: black;
+    justify-content: center;
     
 }
+
+
 
 .cuadrados{
     display:flex;
     justify-content:space-around;
     flex-wrap: wrap;
-    width: 640px;
-    height: 630px;
-    
-    top: 35px;
+    width: 430px;
+    height: 434px;
+    bottom: 100px;
     position: relative;
     left: 150px;
     
@@ -295,13 +312,14 @@ color: wheat;
 }
 
 .cuadros_contenido{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-color: gray;
     position: relative;
-    top: 35px;
+    bottom: 175px;
     text-align: center;
     border-radius: 20px;
+    z-index: 2;
     
 }
 
@@ -318,7 +336,7 @@ color: wheat;
 
 .cuadros_contenido h3{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     margin: 15px;
     
 }
@@ -327,30 +345,34 @@ color: wheat;
     font-size: 12px;
     width: 150px;
     position: relative;
-    left: 50px;
+    left: 25px;
 }
 
 .cuadros_contenido iframe{
-    width: 230px;
-    height: 190px;
+    width: 180px;
+    height: 130px;
 }
 
 
 .contactanos{
     
     text-align: center;
-    width:900px ;
-    height: 700px;
-    background-color:#00C2CB;
+    width:600px ;
+    height: 480px;
+    background-color:#F80BD2;
+    border-radius: 20px;
+    bottom: 305px;
+    position: relative;
+    z-index: 1;
     
 }
 
 .contactanos a{
 position: relative;
-top: 250px;
-right: 200px;
+top: 195px;
+right: 130px;
 padding: 20px 30px;
-background-color: #5271FF;
+background-color: #8C52FF;
 border-radius: 20px;
 color: aliceblue;
 }
@@ -366,20 +388,47 @@ color: aliceblue;
     color:white;
     position: relative;
     top: 100px;
-    font-size: 35px;
+    font-size: 30px;
     left: 30px;
+    top: 50px;
 }
 
 .contactanos input{
-    width: 500px;
+    width: 400px;
     height: 30px;
     position: relative;
-    top: 200px;
-    left: 50px;
+    top: 100px;
+    left: 70px;
 }
 
 .contactanos textarea{
     position: relative;
-    top: 200px;
-    left: 105px;
+    top: 100px;
+    left: 128px;
+}
+
+/* PIE */
+
+footer{
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: #F80BD2;
+    height: 85px;
+    top: 400px;
+    
+}
+
+footer img{
+    position: relative;
+    top: -50px;
+    left:600px ;
+    width: 150px;
+    height: 150px;
+}
+footer p{
+    position: relative;
+    top: 30px;
+    color: wheat;
 }
